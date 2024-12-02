@@ -35,7 +35,7 @@ body {
   font-size: 17px;
   margin-bottom: 1.3rem;
   border: 1px solid #ddd;
-  border-radius: 6px;
+  border-radius: 20px;
   outline: none;
 }
 .form input:focus {
@@ -58,4 +58,43 @@ body {
 .italic {
     font-style: italic;
   }
+  .container {
+    max-width: 700px; /* Augmentez la largeur pour accueillir l'image */
+    width: 100%;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    display: flex; /* Utilisez flexbox pour organiser les éléments */
+  }
   
+  .content {
+    display: flex;
+    gap: 2rem; /* Espace entre l'image et le formulaire */
+    align-items: center; /* Aligne verticalement */
+  }
+  
+  .image-section {
+    flex: 1; /* L'image occupe une proportion de l'espace */
+  }
+  
+  .image-section img {
+    width: 100%; /* L'image occupe toute la largeur de son conteneur */
+    height: 250px; /* Conserve le ratio d'aspect */
+    max-width: 500px; /* Définir une largeur maximale pour l'image */
+    border-radius: 10px; /* Ajout d'un effet arrondi */
+    object-fit: cover; /* L'image remplit son conteneur sans se déformer */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.7); /* Ombre blanche subtile */
+  }
+  .form {
+    flex: 1; /* Le formulaire prend 1/3 de l'espace */
+    display: flex;
+    flex-direction: column; /* Organise le formulaire verticalement */
+  }
+  
+  .form header {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
