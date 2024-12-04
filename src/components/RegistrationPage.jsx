@@ -66,6 +66,14 @@ function RegistrationPage() {
             />
             <input type="submit" className="button" value="Signup" />
           </form>
+
+          {/* Add Login Link */}
+          <p>
+            Already have an account?{' '}
+            <a href="/login" className="login-link">
+              Login here
+            </a>
+          </p>
         </div>
 
         {/* Image Section */}

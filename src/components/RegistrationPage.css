@@ -98,3 +98,13 @@ body {
     text-align: left;
     margin-bottom: 1.5rem;
   }
+  .login-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .login-link:hover {
+    color: darkblue;
+  }
+  
