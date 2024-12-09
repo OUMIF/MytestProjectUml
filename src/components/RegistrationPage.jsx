@@ -10,6 +10,7 @@ function RegistrationPage() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -18,6 +19,7 @@ function RegistrationPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
     if (formData.password !== formData.confirmPassword) {
       alert('Passwords do not match!');
     } else {
@@ -30,7 +32,6 @@ function RegistrationPage() {
       <div className="content">
         {/* Form Section */}
         <div className="form">
-          <header>Register With Us</header>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -64,7 +65,7 @@ function RegistrationPage() {
               onChange={handleChange}
               required
             />
-            <input type="submit" className="button" value="Signup" />
+            <input type="submit" className="button" value="Register" />
           </form>
 
           {/* Add Login Link */}
@@ -78,7 +79,8 @@ function RegistrationPage() {
 
         {/* Image Section */}
         <div className="image-section">
-          <img src="/images/mus.jpg" alt="Illustration" />
+        <header className='regcss'>Register With Us</header>
+          <img src="/images/design.png" alt="Illustration" />
         </div>
       </div>
     </div>
